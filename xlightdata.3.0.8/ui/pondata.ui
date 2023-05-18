@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PDMainWindow</class>
+ <widget class="QMainWindow" name="PDMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PonData</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>window.ico</normaloff>window.ico</iconset>
+  </property>
+  <widget class="QWidget" name="PDcentralwidget">
+   <widget class="QTabWidget" name="PDtabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>621</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="TabOlt">
+     <attribute name="title">
+      <string>OLT Inventory</string>
+     </attribute>
+     <widget class="QLineEdit" name="LeOltMac">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>18</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltCprod">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>45</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltNserie">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>6</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltData">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>115</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>11</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltDproduto">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>185</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltTec">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>220</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltNpedido">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>150</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="GbOltVersoes">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>330</y>
+        <width>220</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Versões</string>
+      </property>
+      <widget class="QLineEdit" name="LeOltVhw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LeOltVfw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOltVhw">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>80</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hardware:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOltVfw">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>80</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Firmware:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="GbOltSoftware">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>330</y>
+        <width>280</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Pacotes de Software</string>
+      </property>
+      <widget class="QLineEdit" name="LeOltStartup">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LeOltSystem">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOltStartup">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>57</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Startup:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOltSystem">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>57</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>System:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOltAsgos">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>57</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>AsGOS:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LeOltAsgos">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="LaOltMac">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAC:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltCprod">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>55</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Código do produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltNserie">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Série:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltData">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>125</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data de Fabricação:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltNpedido">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Numero do pedido:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltDproduto">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>195</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Descrição do Produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltTec">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>180</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Anotações Assist. Tec.:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOltResets">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>265</y>
+        <width>180</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Resets:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOltResets">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>255</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TabOnu">
+     <attribute name="title">
+      <string>ONU inventory</string>
+     </attribute>
+     <widget class="QLabel" name="LaOnuData">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data de Fabricação:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuMac">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>18</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuDproduto">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>220</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuResets">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>290</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuNpedido">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>185</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuMac">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MAC:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuNserie">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>6</number>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="GbOnuSoftware">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>330</y>
+        <width>160</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Pacotes de Software</string>
+      </property>
+      <widget class="QLineEdit" name="LeOnuSystem">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOnuSystem">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>80</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>System:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="GbOnuVersoes">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>330</y>
+        <width>220</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Versões</string>
+      </property>
+      <widget class="QLineEdit" name="LeOnuVhw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LeOnuVfw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOnuVhw">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>80</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hardware:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaOnuVfw">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>80</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Firmware:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuCprod">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>45</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuDproduto">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Descrição do Produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuTec">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>265</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Anotações Assist. Tec.:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuNserie">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Série:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuNpedido">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>195</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Numero do pedido:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuTec">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>255</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuData">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>150</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>11</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuResets">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Resets:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuCprod">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>55</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Código do produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeOnuNspon">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>115</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>25</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaOnuNspon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>125</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Série PON:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TabSTM1GW">
+     <attribute name="title">
+      <string>STM1-GW</string>
+     </attribute>
+     <widget class="QLineEdit" name="LeSTM1Tec">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>195</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Dproduto">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>160</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>30</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Nserie">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>60</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>6</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Cprod">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>25</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Tec">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>205</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Anotações Assist. Tec.:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Nserie">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Série:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Data">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>90</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>11</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Resets">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>230</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Cprod">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>35</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Código do produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="GbSTM1Versoes">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>290</y>
+        <width>220</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Versões</string>
+      </property>
+      <widget class="QLineEdit" name="LeSTM1Vhw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LeSTM1Vfw">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaSTM1Vhw">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>80</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hardware:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LaSTM1Vfw">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>80</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Firmware:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Data">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data de Fabricação:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Npedido">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>135</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Numero do pedido:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LeSTM1Npedido">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>125</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Resets">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>240</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Número de Resets:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LaSTM1Dproduto">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>170</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Descrição do Produto:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="LeCodbar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>32</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LaCodBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>180</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Código de Barras:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PbSend">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enviar Inventário</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>write.ico</normaloff>write.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PbWrite">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gravar Inventário</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>write.ico</normaloff>write.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PbRead">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>45</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ler Inventário</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>read.ico</normaloff>read.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PbClean">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>80</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resetar Campos</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>erase.ico</normaloff>erase.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PbQuit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>81</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sair</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>quit.ico</normaloff>quit.ico</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>LeCodbar</tabstop>
+  <tabstop>LeOltNpedido</tabstop>
+  <tabstop>LeOltDproduto</tabstop>
+  <tabstop>LeOltTec</tabstop>
+  <tabstop>PbWrite</tabstop>
+  <tabstop>PbRead</tabstop>
+  <tabstop>PbClean</tabstop>
+  <tabstop>PbQuit</tabstop>
+  <tabstop>LeOltVhw</tabstop>
+  <tabstop>LeOltVfw</tabstop>
+  <tabstop>LeOltStartup</tabstop>
+  <tabstop>LeOltSystem</tabstop>
+  <tabstop>LeOltAsgos</tabstop>
+  <tabstop>LeOltResets</tabstop>
+  <tabstop>LeOnuMac</tabstop>
+  <tabstop>LeOnuDproduto</tabstop>
+  <tabstop>LeOnuResets</tabstop>
+  <tabstop>LeOnuNpedido</tabstop>
+  <tabstop>LeOnuNserie</tabstop>
+  <tabstop>LeOnuSystem</tabstop>
+  <tabstop>LeOnuVhw</tabstop>
+  <tabstop>LeOnuVfw</tabstop>
+  <tabstop>LeOnuCprod</tabstop>
+  <tabstop>LeOnuTec</tabstop>
+  <tabstop>LeOnuData</tabstop>
+  <tabstop>LeOnuNspon</tabstop>
+  <tabstop>PDtabWidget</tabstop>
+  <tabstop>LeOltData</tabstop>
+  <tabstop>LeOltCprod</tabstop>
+  <tabstop>LeOltNserie</tabstop>
+  <tabstop>LeOltMac</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>LeCodbar</sender>
+   <signal>returnPressed()</signal>
+   <receiver>PDMainWindow</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbWrite</sender>
+   <signal>clicked()</signal>
+   <receiver>PDMainWindow</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbClean</sender>
+   <signal>clicked()</signal>
+   <receiver>PDMainWindow</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PbQuit</sender>
+   <signal>clicked()</signal>
+   <receiver>PDMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

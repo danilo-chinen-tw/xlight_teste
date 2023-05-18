@@ -1,0 +1,22 @@
+echo [General] > "%CD%\3CDaemon\3CDaemon.ini"
+echo InitialSize = RECT(269,40,1133,665) >> "%CD%\3CDaemon\3CDaemon.ini"
+echo TftpOn = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo TftpLog = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo FtpOn = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo FtpLog = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo SyslogOn = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo SystemTray = 0 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo CommServer = 0 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo [TFTPDaemon] >> "%CD%\3CDaemon\3CDaemon.ini"
+echo FrameGap = 0 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo TftpDir = %CD%\tftpboot\ >> "%CD%\3CDaemon\3CDaemon.ini"
+echo AllowOverwrite = 0 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo AllowCreateDir = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo Retries = 10 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo TimeOut = 5 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo [Syslog] >> "%CD%\3CDaemon\3CDaemon.ini"
+echo LogType = 0 >> "%CD%\3CDaemon\3CDaemon.ini"
+echo LogSecurity = 1 >> "%CD%\3CDaemon\3CDaemon.ini"
+
+start 3CDaemon/3CDaemon.EXE
+start xdata.py

@@ -1,0 +1,1 @@
+yum install PyQt4 PyQt4-devel python-kinterbasdb python-tftpy python-psycopg2

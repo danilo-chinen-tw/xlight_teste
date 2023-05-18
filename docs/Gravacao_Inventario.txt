@@ -1,0 +1,31 @@
+SETUP:
+- 2 cabos de rede UTP cruzados ("cross") ou diretos
+- 1 cabo serial RS-232
+- 1 pistola de leitura do código de barras
+- 1 PC com duas placas de rede e uma porta serial
+
+
+XLIGHTDATA:
+- Conectar o computador que tem acesso ao XlightData na porta serial e no console de acesso na parte traseira da OLT.
+- Executar o "XLightData".
+- Abrir o terminal VT100 (Hyper Terminal) e realizar a seguinte configuração:
+	* 19200bps
+	* 8 bits
+	* 1 bit de parada
+	* Nenhum (controle de fluxo)
+- Configurar o IP da porta de rede conectada na OLT:
+	* IP: 192.168.20.2
+	* Máscara: 255.255.255.0
+
+
+GRAVANDO O INVENTÁRIO:
+- Após as ligações elétricas terem sido realizadas e o XLightData estiver rodando o equipamento pode sr energizado
+- No console do terminal irá ser exibido:
+	* "Aguardando inventario..."
+- O código de barras deve ser lido com o cursor do mouse em "Código de Barras"
+- Pressionar "Enter"
+- As informações sobre o equipamento devem aparecer nos campos
+- É possível que aja erro e então um pop-up deve ser exibido
+- Caso não aja erro pressione
+	* "Enviar inventário"
+- Um pop-up deve reportar o sucesso ou erro na operação
