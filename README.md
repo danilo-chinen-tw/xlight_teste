@@ -6,6 +6,8 @@
 
 Quando o container for rodado pela primeira vez, alguns pacotes serão instalados.
 Observe o terminal do vscode e aperte **ENTER** quando for pedido.
+Na instalação do Firebird, será pedida uma senha para o banco de dados. Recomenda-se
+usar a senha **masterkey**.
 
 ## 2. Rodar o xlightdata
 

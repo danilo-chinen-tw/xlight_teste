@@ -1,0 +1,6 @@
+# Requirements without version specifiers #
+fdb
+
+
+# Requirements with version specifiers #
+tftpy == 0.6.0
