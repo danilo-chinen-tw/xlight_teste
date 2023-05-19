@@ -8,7 +8,7 @@
         {
             "label": "Run Xlightdata",
             "type": "shell",
-            "command": "echo \"*** Running Xlightdata. Please visit http://localhost:6080 in your browser ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8 && python2.7 xdata.py",
+            "command": "sh tools/tasks/runTasks.sh -x",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -30,7 +30,7 @@
         {
             "label": "Compile all",
             "type": "shell",
-            "command": "echo \"\n*** Compiling ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8/src && sudo python2.7 -m compileall .",
+            "command": "sh tools/tasks/runTasks.sh -a",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -52,7 +52,7 @@
         {
             "label": "Clean",
             "type": "shell",
-            "command": "echo \"\n*** Cleaning ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8/src && sudo rm *.pyc",
+            "command": "sh tools/tasks/runTasks.sh -c",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
@@ -74,7 +74,7 @@
         {
             "label": "Launch Qt Designer",
             "type": "shell",
-            "command": "echo \"\n*** Launching Qt Designer ***\n\" && designer",
+            "command": "sh tools/tasks/runTasks.sh -q",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
