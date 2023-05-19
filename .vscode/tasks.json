@@ -68,6 +68,28 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+
+        // Task 4: launch QtDesigner
+        {
+            "label": "Launch Qt Designer",
+            "type": "shell",
+            "command": "echo \"\n*** Launching Qt Designer ***\n\" && designer",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true,
+                "group": "output"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

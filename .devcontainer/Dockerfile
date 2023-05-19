@@ -31,6 +31,9 @@ RUN apt update && apt install -y \
     python-pyqt5 \
     python-psycopg2 \
     pyqt5-dev \
+    pyqt5-dev-tools \
+    qt5-default \
+    qttools5-dev-tools \
     software-properties-common \
     vim-common \
     wget
