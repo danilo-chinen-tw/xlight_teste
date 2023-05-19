@@ -1,0 +1,19 @@
+# Ignore files with the following extensions
+**/*.exe
+**/*.pyc
+**/*.log
+**/*.dll
+**/*.bat
+
+# Ignore all folders with these names
+__pycache__/
+
+# Ignore specific folders and files
+/docs/
+/xlightdata3.0.8/.settings/
+/xlightdata3.0.8/src/build/
+/xlightdata3.0.8/src/*.pyc
+/xlightdata3.0.8/3CDaemon
+/xlightdata3.0.8/.project
+/xlightdata3.0.8/.pydevproject
+/.vscode/settings.json

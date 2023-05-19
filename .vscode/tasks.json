@@ -3,10 +3,56 @@
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
+
+        // Task 1: Run XlightData
         {
             "label": "Run Xlightdata",
             "type": "shell",
             "command": "echo \"*** Running Xlightdata. Please visit http://localhost:6080 in your browser ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8 && python2.7 xdata.py",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true,
+                "group": "output"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+
+        // Task 2: Compile src files
+        {
+            "label": "Compile all",
+            "type": "shell",
+            "command": "echo \"\n*** Compiling ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8/src && sudo python2.7 -m compileall .",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true,
+                "group": "output"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+
+        // Task 3: Clean .pyc files
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "echo \"\n*** Cleaning ***\n\" && cd ${workspaceFolder}/xlightdata.3.0.8/src && sudo rm *.pyc",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
